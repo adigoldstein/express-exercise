@@ -28,6 +28,8 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', (req, res) => {
+  res.send('<h1>Home page</h1>')
+});app.get('/d', (req, res) => {
   res.send({
     name: 'Adi',
     age: 34,
